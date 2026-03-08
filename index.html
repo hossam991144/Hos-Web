@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>GIS Projects</title>
+<img src="ADF.avif" alt="" width="400px">
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+}
+
+select{
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+}
+</style>
+
+</head>
+<body>
+
+<h2> GIS بعض أعمالي علي </h2>
+
+<select onchange="openProject(this.value)">
+<option value="">-- أختر ماتريد رؤيته --</option>
+
+<option value="https://hossam991144.github.io/ARTICAL-WEB-GIS/">مقاله عن نظم المعلومات الجغرافية</option>
+
+<option value="">Editing</option>
+
+<option value="">Dem</option>
+
+<option value="map.html">Gaza</option>
+
+<option value="map.html">Map output</option>
+
+<option value="map.html">Network analysis</option>
+
+<option value="map.html">Project Atm FAYOUM</option>
+
+<option value="map.html">Red Sea Mountain Project</option>
+
+<option value="map.html">Jabal Al-Uwaynat Project</option>
+
+<option value="map.html">Omar Allam Project</option>
+
+<option value="map.html">Project Apha</option>
+
+
+</select>
+
+<script>
+
+function openProject(page){
+    if(page !== ""){
+        window.location.href = page;
+    }
+}
+
+</script>
+
+</body>
+</html>
