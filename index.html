@@ -2,6 +2,39 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<title>My GIS Site</title>
+
+<script>
+// حماية الصفحة
+if (localStorage.getItem("auth") !== "true") {
+    window.location.href = "index.html";
+}
+</script>
+
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+}
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Welcome to my GIS website 🚀</h1>
+
+<p><html lang="ar">
+<head>
+<meta charset="UTF-8">
 <title>GIS Projects</title>
 <img src="ADF.avif" alt="" width="400px">
 <style>
@@ -59,4 +92,18 @@ function openProject(page){
 </script>
 
 </body>
+</html></p>
+
+<button onclick="logout()">تسجيل خروج</button>
+
+<script>
+function logout() {
+    localStorage.removeItem("auth");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
 </html>
+
+
